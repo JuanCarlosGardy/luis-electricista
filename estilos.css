@@ -193,6 +193,10 @@ footer {
 @media (max-width: 900px){
   .grid-servicios{ grid-template-columns: 1fr; }
 }
+nav a{
+  display: block;
+  margin: 10px 0;
+}
 .formulario{
   max-width: 600px;
   margin: 30px auto;

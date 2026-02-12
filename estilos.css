@@ -256,3 +256,24 @@ footer {
     box-shadow: 0 14px 40px rgba(0,0,0,.14);
   }
 }
+@keyframes fadeUpStrong {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+header .a1, header .a2, header .a3{
+  opacity: 0;
+  animation: fadeUpStrong .9s cubic-bezier(.2,.8,.2,1) both;
+}
+
+header .a1{ animation-delay: .08s; }
+header .a2{ animation-delay: .22s; }
+header .a3{ animation-delay: .36s; }
+
+@media (prefers-reduced-motion: reduce){
+  header .a1, header .a2, header .a3{
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -12,11 +12,11 @@ body {
 }
 
 /* CONTENEDOR CENTRAL */
-.contenedor {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+.contenedor{
+  width: min(1100px, 92%);
+  margin: 0 auto;
   padding: 40px 0;
+  box-sizing: border-box;
 }
 
 /* HEADER */

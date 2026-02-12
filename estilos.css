@@ -485,3 +485,20 @@ header .a3{ animation-delay: .36s; }
   margin: 0;
   line-height: 1.5;
 }
+/* ===== HERO INTERNO LIMPIO ===== */
+
+.hero-interno{
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 80px 0 60px 0;
+}
+
+.hero-interno h2{
+  margin-bottom: 15px;
+}
+
+.hero-interno p{
+  max-width: 700px;
+  margin: 0 auto;
+}

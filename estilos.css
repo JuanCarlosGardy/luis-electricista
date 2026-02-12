@@ -20,13 +20,16 @@ body {
 }
 
 /* HEADER */
-header {
-  background: #111;
+header{
+  background-image:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("img/hero-electricista.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 100px 20px 120px 20px;
 }
-
 header h1 {
   font-size: 32px;
   margin-bottom: 10px;

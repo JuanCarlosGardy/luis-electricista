@@ -1,0 +1,221 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* CONTENEDOR CENTRAL */
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* HEADER */
+header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header p {
+  margin-bottom: 20px;
+}
+
+.boton-llamar {
+  background: #ffcc00;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* NAV */
+nav{
+  background: #222;
+  text-align: center;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* HERO */
+.hero{
+  background-image:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("img/hero-electricista.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 90px 20px;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.hero p{
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: .95;
+}
+
+.boton-principal {
+  display: inline-block;
+  background: #ffcc00;
+  color: black;
+  padding: 14px 28px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* SECCIONES */
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.servicios ul {
+  list-style: none;
+  max-width: 700px;
+  margin: auto;
+}
+
+.servicios li {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+/* CTA */
+.cta {
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 14px;
+}
+.whatsapp-float{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  z-index: 9999;
+}
+.whatsapp-float:hover{
+  filter: brightness(0.95);
+}
+.grid-servicios{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card-servicio{
+  background: #fff;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.card-servicio h3{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card-servicio p{
+  font-size: 15px;
+  color: #333;
+}
+
+@media (max-width: 900px){
+  .grid-servicios{ grid-template-columns: 1fr; }
+}
+.formulario{
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario textarea{
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+@media (max-width: 768px){
+
+  header h1{
+    font-size: 22px;
+  }
+
+  .hero h2{
+    font-size: 22px;
+  }
+
+  nav a{
+    display: block;
+    margin: 8px 0;
+  }
+
+  .boton-principal{
+    padding: 12px 20px;
+  }
+
+}

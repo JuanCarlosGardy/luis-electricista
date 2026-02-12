@@ -97,18 +97,19 @@ nav a:hover{
 }
 
 /* HERO */
-.hero{
+/* HERO SOLO PARA HOME */
+header{
   background-image:
     linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url("img/hero-electricista.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  text-align: center;
+  min-height: 70vh;
   display: flex;
   align-items: center;
-  min-height: 70vh; /* por defecto */
 }
+
 
 /* HERO INTERNO MÁS PEQUEÑO */
 .hero-small{

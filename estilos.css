@@ -222,3 +222,36 @@ footer {
   }
 
 }
+/* ===== ANIMACIONES PREMIUM ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.header-anim{
+  animation: fadeUp .8s ease-out both;
+}
+
+/* micro-interacciones */
+.boton-llamar,
+.boton-principal{
+  transition: transform .12s ease, filter .12s ease, box-shadow .12s ease;
+}
+
+.boton-llamar:hover,
+.boton-principal:hover{
+  transform: translateY(-1px);
+  filter: brightness(0.98);
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+/* tarjetas más premium (solo escritorio) */
+@media (hover:hover){
+  .card-servicio{
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .card-servicio:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(0,0,0,.14);
+  }
+}

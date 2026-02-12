@@ -21,6 +21,7 @@ body {
 
 /* HEADER */
 header{
+  background-color: #0b0b0b;
   background-image:
     linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url("img/hero-electricista.jpg");

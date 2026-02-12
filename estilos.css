@@ -503,3 +503,8 @@ header .a3{ animation-delay: .36s; }
   max-width: 700px;
   margin: 0 auto;
 }
+/* ===== SECCIONES GENERALES ===== */
+section{
+  background: #f7f7f7;
+  padding: 60px 0;
+}

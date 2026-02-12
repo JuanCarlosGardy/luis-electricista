@@ -193,6 +193,27 @@ footer {
 @media (max-width: 900px){
   .grid-servicios{ grid-template-columns: 1fr; }
 }
+nav .contenedor{
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 8px 14px;
+  -webkit-overflow-scrolling: touch;
+}
+
+nav a{
+  display: inline-block;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+nav a:active{
+  transform: scale(0.98);
+}
+
 .formulario{
   max-width: 600px;
   margin: 30px auto;

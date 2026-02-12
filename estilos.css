@@ -51,12 +51,15 @@ header p {
 
 /* NAV */
 nav{
-  background: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   text-align: center;
-  padding: 15px 0;
+  padding: 14px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
 nav a {

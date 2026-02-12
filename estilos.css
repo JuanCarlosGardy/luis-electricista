@@ -99,13 +99,31 @@ nav a:hover{
 /* HERO */
 .hero{
   background-image:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url("img/hero-electricista.jpg");
   background-size: cover;
   background-position: center;
-  text-align: center;
-  padding: 90px 20px;
   color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  min-height: 70vh; /* por defecto */
+}
+
+/* HERO INTERNO MÁS PEQUEÑO */
+.hero-small{
+  min-height: 38vh;
+}
+
+/* móvil */
+@media (max-width: 768px){
+  .hero{
+    min-height: 60vh;
+  }
+
+  .hero-small{
+    min-height: 28vh;
+  }
 }
 
 .hero h2 {

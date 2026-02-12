@@ -31,6 +31,27 @@ header{
   text-align: center;
   padding: 100px 20px 120px 20px;
 }
+/* Header grande (home) */
+.header-home{
+  background-color: #0b0b0b;
+  background-image:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("img/hero-electricista.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 120px 20px;
+}
+
+/* Header pequeño (páginas internas) */
+.header-interno{
+  background: #0b0b0b;
+  color: white;
+  text-align: center;
+  padding: 42px 20px 46px 20px;
+}
+
 header h1 {
   font-size: 32px;
   margin-bottom: 10px;
